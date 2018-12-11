@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Lista zakupów</title>
+    <meta charset="utf-8">
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css?family=Permanent+Marker|Montserrat" rel="stylesheet">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.5.0/css/all.css" integrity="sha384-B4dIYHKNBt8Bc12p+WXckhzcICo0wtJAoU8YZTY5qE0Id1GSseTk6S+L3BlXeVIU"
+        crossorigin="anonymous">
+</head>
+
+<body>
+    <header>
+        <h1>TO DO</h1>
+        <p>Add things to your list by typing them below.</p>
+        <span class="done">
+            <p>Click on them to set as done</p>
+        </span>
+        <span class="remove">
+            <p>Click" <i class="far fa-trash-alt itemDel"></i> " to remove it from your list</p>
+        </span>
+    </header>
+    <main>
+        <div class="center-container">
+            <div class="row">
+                <form>
+                    <input type="text" name="item" id="itemInput" placeholder="Add new...">
+                    <button type="submit" id="addItemBtn"><i class="fas fa-pen"></i></button>
+                    <button type="button" id="deleteAll"><i class="far fa-trash-alt"></i></button>
+                </form>
+            </div>
+            <div class="itemsList">
+            </div>
+        </div>
+    </main>
+    <script src="app.js"></script>
+</body>
+
+</html>
